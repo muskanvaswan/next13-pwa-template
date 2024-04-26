@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
  
 // Font files can be colocated inside of `pages`
-const murmure = localFont({ src: '@fonts/le-murmure.ttf' })
+const murmure = localFont({ src: '../../fonts/le-murmure.ttf' })
 
 export const metadata: Metadata = {
   title: "AUM",
