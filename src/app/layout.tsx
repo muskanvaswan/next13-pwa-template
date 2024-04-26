@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "AUM",
   description: "Discover the Hindu Religion with modern technology",
   generator: "Next.js",
-  manifest: "./manifest.webmanifest",
+  manifest: "./manifest.json",
   keywords: ["nextjs", "nextjs13", "next13", "pwa", "next-pwa"],
   themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
   authors: [
