@@ -6,7 +6,7 @@ import localFont from 'next/font/local'
 const murmure = localFont({ src: '../../fonts/le-murmure.ttf' })
 
 export const metadata: Metadata = {
-  title: "AUM",
+  title: "App",
   description: "Discover the Hindu Religion with modern technology",
   generator: "Next.js",
   manifest: "/manifest.json",
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   viewport:
     "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: [
-    { rel: "apple-touch-icon", url: "icons/icon-512x512.png" },
-    { rel: "icon", url: "icons/icon-512x512.png" },
+    { rel: "apple-touch-icon", url: "brand-icons/icon-512x512.png" },
+    { rel: "icon", url: "brand-icons/icon-512x512.png" },
   ],
 };
 
