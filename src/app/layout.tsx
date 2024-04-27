@@ -1,9 +1,8 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import localFont from 'next/font/local'
- 
-// Font files can be colocated inside of `pages`
-const murmure = localFont({ src: '../../fonts/le-murmure.ttf' })
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from '@mui/material/CssBaseline';
+import theme from "./theme";
 
 export const metadata: Metadata = {
   title: "App",
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
   generator: "Next.js",
   manifest: "/manifest.json",
   keywords: ["nextjs", "nextjs13", "next13", "pwa", "next-pwa"],
-  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
   authors: [
     { name: "Muskan Vaswan" },
     {
@@ -34,7 +32,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={murmure.className}>{children}</body>
+      <body>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            {children}
+          </ThemeProvider>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   );
 }
